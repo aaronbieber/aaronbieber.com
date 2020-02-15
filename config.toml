@@ -1,0 +1,4 @@
+baseURL = "http://aaronbieber.com/"
+languageCode = "en-us"
+title = "Aaron Bieber."
+theme = "aaronbieber"

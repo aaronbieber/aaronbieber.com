@@ -1,0 +1,256 @@
+@import url('normalize.css');
+@import url('fontello.css');
+
+div.set-one, div.set-two {
+  display: inline;
+}
+
+body {
+  margin: 0;
+  /* background: url('../images/fresh_snow.png') repeat; */
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Roboto', Helvetica, sans-serif;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+a {
+  color: red;
+  transition: 0.2s color;
+}
+
+div.content {
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid silver; */
+  /* border-radius: 4px; */
+  /* background-color: #fff; */
+  /* box-shadow: 0px 5px 10px silver; */
+  /* margin: 8em; */
+  /* padding: 2em; */
+}
+
+div.content > img {
+  /* display: block; */
+  /* margin: -5em auto 0 auto; */
+  /* border-radius: 50%; */
+  /* border: 1px solid #fff; */
+  /* box-shadow: 0px 5px 10px #aaa; */
+}
+
+div.content header {
+  padding: 1em 0;
+  border-bottom: 1px solid silver;
+}
+
+div.content h1 {
+  height: 190px;
+  margin: 0;
+  background: url('../images/aaron-bieber-title.png') no-repeat top center;
+  content: "";
+}
+
+div.content h1 a {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
+div.content h1 span {
+  display: none;
+}
+
+div.words {
+  margin: 3em auto;
+  width: 33%;
+}
+
+div.share {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 60px !important;
+}
+
+div.share a {
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 0px #A5AFB2;
+  background-color: #C5D2D6;
+  color: white;
+  text-shadow: 0px 3px 3px silver;
+}
+
+div.share a:hover {
+  color: #444488;
+}
+
+ul.navigation {
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+ul.navigation li {
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 0 1em 0 0;
+  padding: 0;
+}
+
+ul.navigation li a {
+  border-bottom: 2px solid white;
+}
+
+ul.navigation li a {
+  color: black;
+  text-decoration: none;
+}
+
+ul.navigation li.active a {
+  border-bottom: 2px solid black;
+}
+
+@media (max-width: 390px) {
+  ul.navigation {
+    margin-left: 1em;
+  }
+
+  ul.navigation li {
+    display: block;
+    text-align: left;
+    margin-bottom: 0.5em;
+  }
+}
+
+ul.navigation li:last-child {
+  margin-right: 0;
+}
+
+a.tip span {display: none;}
+
+@media (min-width: 1000px) {
+  a.tip {
+    position: relative;
+    text-decoration: none;
+  }
+
+  a.tip:hover span {
+    display: block;
+    position: absolute;
+    padding: .5em;
+    content: attr(title);
+    min-width: 120px;
+    text-align: center;
+    width: auto;
+    height: auto;
+    white-space: nowrap;
+    top: 100px;
+    background: rgba(0,0,0,.8);
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    color: #fff;
+    font-size: .3em;
+    text-shadow: none;
+  }
+
+  a.tip-left span {
+    left: 0px;
+  }
+
+  a.tip-left span:after {
+    top: -19px;
+    right: auto;
+    left: 1em;
+    bottom: auto;
+  }
+
+  a.tip-right span {
+    right: 0px;
+  }
+
+  a.tip-right span:after {
+    top: -19px;
+    right: 1em;
+    left: auto;
+    bottom: auto;
+  }
+
+  a.tip:hover span:after {
+    position: absolute;
+    display: block;
+    content: "";
+    border-color: transparent transparent rgba(0,0,0,.8) transparent;
+    border-style: solid;
+    border-width: 10px;
+    height: 0;
+    width: 0;
+    position: absolute;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 760px) {
+  div.words {
+    margin: 3em auto;
+    width: 50%;
+  }
+
+  div.set-one, div.set-two {
+    display: block;
+  }
+
+  div.set-one {
+    margin-bottom: 0.5em;
+  }
+}
+
+@media (max-width: 760px) {
+  div.words {
+    margin: 3em;
+    width: inherit;
+  }
+
+  div.content > img {
+    margin-top: -4em;
+  }
+
+  div.content {
+    /* margin: 3em 2em 2em 2em; */
+  }
+
+  div.share a {
+    display: block;
+    margin-bottom: 0.4em;
+  }
+}
+
+div.social {
+  margin-top: 3em;
+  text-align: center;
+}
+
+div.social a {
+  display: inline-block;
+  color: white;
+  background-color: black;
+  height: 2em;
+  width: 2em;
+  line-height: 2em;
+  text-align: center;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+i.icon-popup {
+  color: #bbb;
+}
+
+span.nowrap {
+  white-space: nowrap;
+}

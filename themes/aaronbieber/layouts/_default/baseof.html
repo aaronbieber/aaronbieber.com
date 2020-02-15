@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{ if not .IsHome }}{{ .Page.Title }} - {{ end }}{{ .Site.Title }}</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/screen.css" type="text/css" media="screen" charset="utf-8">
+  </head>
+  <body>
+    <div class="content">
+
+      <header>
+        <h1><a href="/"><span>Aaron Bieber</span></a></h1>
+      </header>
+
+      <ul class="navigation">
+        <li{{ if .IsHome }} class="active"{{ end }}><a href="/">Home</a></li>
+        <li><a href="https://gallery.aaronbieber.com">Gallery <i class="icon-popup"></i></a></li>
+        {{ $currentNavitem := .Page.Params.navitem }}
+        {{ range .Site.RegularPages }}
+          <li{{ if eq .Params.navitem $currentNavitem }} class="active" {{ end }}><a href="{{ .Permalink }}">{{ .Name }}</a></li>
+        {{ end }}
+      </ul>
+
+      <div class="words">
+        {{- block "main" . }}{{- end }}
+
+        <div class="social">
+          <a href="https://instagram.com/aaronbieber" class="icon-instagram" title="Instagram"></a>
+          <a href="https://github.com/aaronbieber" class="icon-github-circled" title="Github"></a>
+          <a href="https://www.linkedin.com/in/aaronbieber" class="icon-linkedin" title="LinkedIn"></a>
+          <a href="https://twitter.com/aaronbieber" class="icon-twitter" title="Twitter"></a>
+        </div>
+
+      </div>
+  </body>
+</html>
