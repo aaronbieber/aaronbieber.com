@@ -16,7 +16,7 @@
 
       <ul class="navigation">
         <li{{ if .IsHome }} class="active"{{ end }}><a href="/">Home</a></li>
-        <li><a href="https://gallery.aaronbieber.com">Gallery <i class="icon-popup"></i></a></li>
+        <li><a href="https://gallery.aaronbieber.com" target="_blank">Gallery <i class="icon-popup"></i></a></li>
         {{ $currentNavitem := .Page.Params.navitem }}
         {{ range .Site.RegularPages }}
           <li{{ if eq .Params.navitem $currentNavitem }} class="active" {{ end }}><a href="{{ .Permalink }}">{{ .Name }}</a></li>
