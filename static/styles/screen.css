@@ -33,6 +33,10 @@ div.content {
   /* padding: 2em; */
 }
 
+div.content img {
+  max-width: 100%;
+}
+
 div.content > img {
   /* display: block; */
   /* margin: -5em auto 0 auto; */
@@ -253,4 +257,10 @@ i.icon-popup {
 
 span.nowrap {
   white-space: nowrap;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid silver;
+  margin: 3em 0;
 }
