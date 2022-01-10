@@ -5,11 +5,11 @@ navitem: technology
 
 ## Coaching
 
-![Lead Better](/images/lead-better.png)
+[![Lead Better](/images/lead-better.png)](https://aaronbieber.coach)
 
-If you are a software engineer, new manager, or even a more seasoned leader of
-people, I can help you to reach the next level of achievement through one-on-one
-coaching sessions.
+If you are a software engineer, engineering manager, or tech company founder, I
+can help you to reach the next level of achievement through one-on-one coaching
+sessions.
 
 Visit {{< ablank "my coaching website" "https://aaronbieber.coach" >}} to learn
 more and introduce yourself.
@@ -18,7 +18,7 @@ more and introduce yourself.
 
 ## My Tech Blog
 
-![The Chronicle](/images/the-chronicle.png)
+[![The Chronicle](/images/the-chronicle.png)](https://blog.aaronbieber.com)
 
 I have written about technology, generally, and more recently a lot more about
 Emacs (no, really) on my "personal" blog,
@@ -31,9 +31,9 @@ Windows for the first time in over 20 years and was disappointed.
 
 ## Wayfund
 
-I am a founding member of [Wayfund](http://wayfund.co), a Boston-area tech talent syndicate
-working to amplify the opportunities for entrepreneurs connected to the Wayfair
-engineering team's broad network.
+I am a founding member of {{< ablank "Wayfund" "http://wayfund.co" >}}, a
+Boston-area tech talent syndicate working to amplify the opportunities for
+entrepreneurs connected to the Wayfair engineering team's broad network.
 
 [![Wayfund](/images/wayfund.png)](http://wayfund.co)
 
