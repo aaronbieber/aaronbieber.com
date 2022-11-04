@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/screen.css" type="text/css" media="screen" charset="utf-8">
+    <script src="https://kit.fontawesome.com/d4debd1097.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="content">
@@ -16,7 +17,7 @@
 
       <ul class="navigation">
         <li{{ if .IsHome }} class="active"{{ end }}><a href="/">Home</a></li>
-        <li><a href="https://gallery.aaronbieber.com" target="_blank">Gallery <i class="icon-popup"></i></a></li>
+        <li><a href="https://gallery.aaronbieber.com" target="_blank">Gallery <i class="fa-solid fa-arrow-up-right-from-square nav-gray"></i></a></li>
         {{ $currentNavitem := .Page.Params.navitem }}
         {{ range .Site.RegularPages }}
           <li{{ if eq .Params.navitem $currentNavitem }} class="active" {{ end }}><a href="{{ .Permalink }}">{{ .Name }}</a></li>
@@ -27,12 +28,31 @@
         {{- block "main" . }}{{- end }}
 
         <div class="social">
-          <a href="https://instagram.com/aaronbieber" class="icon-instagram" title="Instagram"></a>
-          <a href="https://github.com/aaronbieber" class="icon-github-circled" title="Github"></a>
-          <a href="https://www.linkedin.com/in/aaronbieber" class="icon-linkedin" title="LinkedIn"></a>
-          <a href="https://twitter.com/aaronbieber" class="icon-twitter" title="Twitter"></a>
+          <a href="https://github.com/aaronbieber" title="Github">
+            <span class="fa-stack" style="vertical-align: top;">
+              <i class="fa-solid fa-square fa-stack-2x"></i>
+              <i class="fa-solid fa-brands fa-github fa-stack-1x fa-inverse"></i>
+            </span>
+          </a>
+          <a href="https://www.linkedin.com/in/aaronbieber" title="LinkedIn">
+            <span class="fa-stack" style="vertical-align: top;">
+              <i class="fa-solid fa-square fa-stack-2x"></i>
+              <i class="fa-solid fa-brands fa-linkedin-in fa-stack-1x fa-inverse"></i>
+            </span>
+          </a>
+          <a href="https://twitter.com/aaronbieber" title="Twitter">
+            <span class="fa-stack" style="vertical-align: top;">
+              <i class="fa-solid fa-square fa-stack-2x"></i>
+              <i class="fa-solid fa-brands fa-twitter fa-stack-1x fa-inverse"></i>
+            </span>
+          </a>
+          <a rel="me" href="https://indieweb.social/@aaronbieber" title="Mastodon">
+            <span class="fa-stack" style="vertical-align: top;">
+              <i class="fa-solid fa-square fa-stack-2x"></i>
+              <i class="fa-solid fa-brands fa-mastodon fa-stack-1x fa-inverse"></i>
+            </span>
+          </a>
         </div>
-
       </div>
   </body>
 </html>
