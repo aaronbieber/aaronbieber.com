@@ -5,12 +5,12 @@ navitem: art
 
 ## Generative Works
 
-[![Generative Art](/images/generative-art.png)](/genart)
+[![Generative Art](/images/generative-art.png)](https://aaronbieber.art)
 
 Lately I have renewed interest in "generative art," or the creation of art
-through code. You can view my [generative art gallery](/genart), which comprises
-works built in the great Javascript version of the Processing environment
-(so-called "p5js").
+through code. You can view my
+[generative art gallery](https://aaronbieber.art), which comprises works 
+built in the great Javascript version of the Processing environment (so-called "p5js").
 
 {{< hr >}}
 
